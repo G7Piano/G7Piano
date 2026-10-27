@@ -1,0 +1,49 @@
+G7Piano · App instalable (PWA)
+==============================
+
+Archivos de esta carpeta (todos van juntos, en el mismo nivel):
+  index.html              la app completa
+  manifest.webmanifest    nombre, colores e ícono de la app
+  sw.js                   guarda la app en el teléfono para usarla sin internet
+  icon-192.png, icon-512.png, icon-maskable-512.png, apple-touch-icon.png   íconos
+
+Para instalarla, la app tiene que estar publicada una vez en una dirección web
+segura (https). Después de instalada funciona sin internet.
+
+OPCIÓN RECOMENDADA: GitHub Pages (gratis)
+-----------------------------------------
+1. Descomprime este .zip en el teléfono (con el administrador de archivos).
+2. Entra a github.com en el navegador y crea una cuenta gratuita.
+3. Toca "+" → "New repository". Ponle de nombre: g7piano
+   Márcalo como "Public" y toca "Create repository".
+4. En el repositorio toca "uploading an existing file" (o "Add file" → "Upload files")
+   y selecciona todos los archivos de la carpeta (LEEME.txt es opcional). Toca "Commit changes".
+   Consejo: si en el teléfono no aparece esa opción, activa "Sitio de escritorio"
+   en el menú del navegador.
+5. Ve a "Settings" → "Pages". En "Branch" elige "main" y la carpeta "/ (root)".
+   Toca "Save".
+6. Espera uno o dos minutos. Tu app quedará en:
+   https://TU-USUARIO.github.io/g7piano/
+
+INSTALARLA EN EL TELÉFONO
+-------------------------
+Android (Chrome): abre la dirección, toca el menú ⋮ y elige
+"Instalar aplicación" o "Añadir a pantalla de inicio".
+
+iPhone (Safari): abre la dirección, toca el botón Compartir y elige
+"Añadir a pantalla de inicio".
+
+Ábrela una vez con internet para que se guarde completa. Después funciona
+sin conexión. Las letras del título usan una fuente de internet; sin conexión
+se ve con una fuente del teléfono muy parecida.
+
+ACTUALIZAR LA APP
+-----------------
+Sube el nuevo index.html al mismo repositorio (reemplaza el anterior) y en sw.js
+cambia "g7piano-v1" por "g7piano-v2" (v3, v4… en cada actualización).
+Al abrir la app con internet, se actualiza sola.
+
+SIN PUBLICAR NADA (opción rápida)
+---------------------------------
+index.html también se puede abrir directamente desde el administrador de archivos
+del teléfono y funciona sin internet, pero así no se instala con ícono propio.
